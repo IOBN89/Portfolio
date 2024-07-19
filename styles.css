@@ -1,0 +1,240 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background: #660066;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    background: #800080;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Container for main content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+border-bottom: 5px solid #660066;
+}
+
+
+
+#skills h2 {
+    border-bottom: 5px solid #660066;
+    }
+
+
+#contact h2 {
+    border-bottom: 5px solid #660066;
+    }
+
+
+#cv h2 {
+    border-bottom: 5px solid #660066;
+    }
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.8;
+}
+
+#greeting h1 {font-family: 'Handwriting', sans-serif;}
+
+
+
+/* Profile picture */
+.picture {
+    text-align: center;
+}
+.picture img {
+    border-radius: 50%;
+    max-width: 150px;}
+
+section:last-child {
+    border-bottom: none;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #660066;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* All Responsive adjustments */
+
+/* Responsive adjustments for extra devices*/
+@media (max-width: 1400px) {
+    .container {
+        padding: 15px;
+    }
+    
+    nav a {
+        font-size: 1em;
+    }
+}
+
+
+/* Responsive adjustments for large devices*/
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px;
+    }
+    
+    nav a {
+        font-size: 1em;
+    }
+}
+
+/* Responsive adjustments for medium devices*/
+@media (max-width: 992px) {
+    .container {
+        padding: 15px;
+    }
+    
+    nav a {
+        font-size: 1em;
+    }
+}
+
+/* Default styles for all screen sizes */
+/* You can put your global styles here */
+
+/* Media query for extra-small devices (phones) */
+@media only screen and (max-width: 576px) {
+    /* Adjustments for extra-small screens */
+    body {
+        font-size: 14px; /* Decrease font size for better readability */
+    }
+
+    header {
+        text-align: center; /* Center align the header text */
+    }
+
+    nav {
+        flex-direction: column; /* Display navigation links in a column layout */
+        align-items: center; /* Center align navigation links */
+    }
+
+    nav a {
+        margin: 5px; /* Add space between navigation links */
+    }
+
+    /* Example adjustments: */
+    section {
+        padding: 10px; /* Add padding around sections */
+    }
+
+    section#about {
+        font-size: 16px; /* Increase font size for better readability */
+    }
+
+    /* Example of hiding the CV section on extra-small screens */
+    section#cv {
+        display: none; /* Hide the CV section */
+    }
+}
+
+/* Media query for small devices (landscape phones, tablets) */
+@media only screen and (min-width: 577px) {
+    /* Adjustments for small screens */
+    body {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    nav {
+        /* Example of adjusting navigation bar layout */
+        justify-content: center; /* Center align navigation links */
+    }
+}
+
+/* Media query for medium devices (tablets, small laptops) */
+
+
+@media only screen and (min-width: 769px) {
+    /* Adjustments for medium screens */
+    body {
+        font-size: 18px; /* Adjust font size */
+    }
+}
+
+/* Media query for large devices (desktops, laptops) */
+@media only screen and (min-width: 993px) {
+    /* Adjustments for large screens */
+    /* Example of adjusting layout for sections */
+    section {
+        padding: 20px; /* Increase padding */
+    }
+}
+
+/* Media query for extra-large devices (large desktops) */
+@media only screen and (min-width: 1201px) {
+    /* Adjustments for extra-large screens */
+    /* Example of adjusting layout for sections */
+    section {
+        padding: 30px; /* Further increase padding */
+    }
+}
